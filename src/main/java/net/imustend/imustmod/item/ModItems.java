@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item TYMONIUM = registerItem("tymonium", new Item(new FabricItemSettings()));
+    public static final Item RAW_TYMONIUM = registerItem("raw_tymonium", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(TYMONIUM);
@@ -22,7 +23,5 @@ public class ModItems {
     }
     public static void registerModItems() {
         Imustmod.LOGGER.info("Registering Mod Items for " + Imustmod.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }

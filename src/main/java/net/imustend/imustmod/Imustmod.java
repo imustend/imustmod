@@ -2,6 +2,7 @@ package net.imustend.imustmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.imustend.imustmod.block.ModBlocks;
 import net.imustend.imustmod.item.ModItemGroups;
 import net.imustend.imustmod.item.ModItems;
 import org.slf4j.Logger;
@@ -13,7 +14,8 @@ public class Imustmod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
 	}
 }

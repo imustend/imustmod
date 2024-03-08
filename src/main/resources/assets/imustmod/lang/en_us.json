@@ -1,4 +1,7 @@
 {
   "item.imustmod.tymonium": "Tymonium",
+  "item.imustmod.raw_tymonium": "Raw Tymonium",
+  "block.imustmod.tymonium_block": "Tymonium Block",
+  "block.imustmod.raw_tymonium_block": "Raw Tymonium Block",
   "itemgroup.imustmod": "Imustmod"
 }
