@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "imustmod:block/tymonium_slab"
+    },
+    "type=double": {
+      "model": "imustmod:block/tymonium_block"
+    },
+    "type=top": {
+      "model": "imustmod:block/tymonium_slab_top"
+    }
+  }
+}

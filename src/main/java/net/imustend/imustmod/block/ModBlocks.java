@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.imustend.imustmod.Imustmod;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -15,9 +17,15 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block TYMONIUM_BLOCK = registerBlock("tymonium_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.TERRACOTTA).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-    public static final Block RAW_TYMONIUM_BLOCK = registerBlock("raw_tymonium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
+
+    public static final Block TYMONIUM_STAIRS = registerBlock("tymonium_stairs",
+            new StairsBlock(ModBlocks.TYMONIUM_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
+
+    public static final Block TYMONIUM_SLAB = registerBlock("tymonium_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
+    public static final Block RAW_TYMONIUM_BLOCK = registerBlock("raw_tymonium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.TERRACOTTA).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

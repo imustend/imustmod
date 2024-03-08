@@ -3,5 +3,7 @@
   "item.imustmod.raw_tymonium": "Raw Tymonium",
   "block.imustmod.tymonium_block": "Tymonium Block",
   "block.imustmod.raw_tymonium_block": "Raw Tymonium Block",
+  "block.imustmod.tymonium_slab": "Tymonium Slab",
+  "block.imustmod.tymonium_stairs": "Tymonium Stairs",
   "itemgroup.imustmod": "Imustmod"
 }

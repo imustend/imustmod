@@ -17,8 +17,11 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.TYMONIUM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.TYMONIUM);
                         entries.add(ModBlocks.TYMONIUM_BLOCK);
+                        entries.add(ModBlocks.TYMONIUM_SLAB);
+                        entries.add(ModBlocks.TYMONIUM_STAIRS);
                         entries.add(ModItems.RAW_TYMONIUM);
                         entries.add(ModBlocks.RAW_TYMONIUM_BLOCK);
+
 
                     }).build());
     public static void registerItemGroups() {
